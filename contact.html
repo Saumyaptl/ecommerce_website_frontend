@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E Commerce | Contact us</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav nav-box">
+            <div class="navigation-bar ">
+                <div class="logo">
+                    <a href="#"><img src="assets\1Stop_logo_New_Png.png" alt="logo" width="150"></a>
+                </div>
+                <div class="nav_side">
+                    <a href="index.html">Home</a>
+                    
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="service.html">Services</a>
+                    <a href="blog.html">Blogs</a>
+                    
+                    <a href="login.html">Login/Register</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="cntct">
+        <h2>contact us</h2>
+        <div class="g_map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3554.0382393605414!2d79.92369241377881!3d27.02895758307762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399e65f25f1dcecb%3A0x57316c2c300e8668!2sKannauj%20Bus%20Stop!5e0!3m2!1sen!2sin!4v1653674812192!5m2!1sen!2sin"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="contact_cntnt">
+            <p><b>Adress : kannauj,uttar pradesh</b></p>
+            <p><b>Call : +919876543201</b></p>
+            <p><b>Mail : jjhgxsj14@gmail.com</b></p>
+
+
+            <p> connect with us from different social plateform link is given below</p>
+        </div>
+    </div>
+    <div class="feed">
+
+        <h2>Write a Review</h2>
+        <div class="feed_form">
+            <form name="sheeeet" method="post">
+                <input type="text" name="Name " Placeholder="NAME"><br>
+                <input type="email" name="Email" Placeholder="EMAIL"><br>
+                <input type="number" name="Number " Placeholder="contact no"><br>
+                <textarea row="5" cols="7" name="Review" placeholder="write your review"></textarea><br>
+                <button type="submit">submit</button>
+
+            </form>
+        </div>
+
+    </div>
+    <footer>
+        <div class="footer-logo">
+            <a href="#"><img src="assets/1Stop_logo_New_Png.png" width="150"></a>
+        </div>
+        <div class="pages">
+            <h3>Pages</h3>
+            <a href="about.html">About Us</a>|
+            <a href="service.html">Services</a>|
+            <a href="blog.html">Blogs</a>|
+            <a href="login.html">Login</a>|
+            <a href="login.html">Sign Up</a>|
+
+        </div>
+        <div class="doc">
+            <h3>Documents</h3>
+            <a href="">Privacy Policy</a>|
+            <a href="">Terms of Use</a>|
+
+            <a href="">Refund Policy</a>|
+
+        </div>
+        <div class="social">
+            <h3>Follow us</h3>
+            <a href="https://twitter.com/1stopconnection?lang=en" target="_blank"><i
+                    class="fa-brands fa-twitter-square"></i></a>
+            <a href="https://www.linkedin.com/company/1stop-ai/?originalSubdomain=in" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/1stop.ai/?hl=en" target="_blank"><i
+                    class="fa-brands fa-instagram-square"></i></a>
+            <a href="https://www.facebook.com/pages/category/Education-website/1Stopai-102490171820303/"
+                target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <a href="https://api.WhatsApp.com/send?phone=+918695067840"><i class="fa-brands fa-whatsapp-square"></i></a>
+            <a href="tel: +918695067840"><i class="fa-solid fa-phone"></i></a>
+            <a href="mailto: support@1stop.ai"><i class="fa-solid fa-envelope"></i></a>
+
+        </div>
+        <hr>
+        <p> copyright &copy; 1 stop. All rights reserved</p>
+    </footer>
+
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby0znCAEjJBGzX5zHK4HSWqXegbvH5DrT3r9wd8fs5dlE_9NcEZzRXgDanQ5su3yY3v/exec'
+        const form = document.forms['sheeeet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
